@@ -23,7 +23,8 @@ public interface BootjpaRepository extends JpaRepository<Bootjpa, Integer> {
 	  List<Bootjpa> findByName(String bootjpaName);
 	  List<Bootjpa> deleteById(int bootjpaId);
 	  long count();
-	  List<Bootjpa> findByAll(int bootjpaId);
+	  List<Bootjpa> findByAll();
+	  List<Bootjpa> deleteByAll();
 	  List<Bootjpa> findOne(String bootjpaName);
 	  List<Bootjpa> findByNameContaining(String bootjpaName);
 	  
